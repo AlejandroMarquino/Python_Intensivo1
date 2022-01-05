@@ -5,7 +5,7 @@
 - Imprime por pantalla solo aquellos resultados que sean ficheros (para ello también necesitas una función existente en os.
 """
 
-# Solución 1, aplicando mi lógica y con prueba y error.
+# Solución 1, aplicando mi lógica con prueba y error.
 
 import os
 
