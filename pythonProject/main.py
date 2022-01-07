@@ -5,8 +5,8 @@
 - Imprime por pantalla solo aquellos resultados que sean ficheros (para ello también necesitas una función existente en os.
 """
 
-# Solución 1
-
+# Solución 1, aplicando mi lógica y con prueba y error.
+import humanize
 import os
 
 def ficheros(ruta):
@@ -16,6 +16,12 @@ def ficheros(ruta):
     for archivo in contenido:
         if os.path.isfile(ruta+ '\\' +archivo):
             print(archivo)
+# Ampliación: Lista el tamaño de los archivos en formato humano
+
+    tamanyo = 0
+    for filename in os.listdir(ruta):
+        tamanyo = tamanyo + os.path.getsize(os.path.join(ruta, filename))
+        print(tamanyo, (humanize.naturalsize(tamanyo)))
 
 if __name__ == "__main__":
     ruta = input("Intruduce la ruta: \n")
