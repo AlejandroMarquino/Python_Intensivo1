@@ -24,7 +24,7 @@ def ficheros(ruta):
         print(tamanyo, (humanize.naturalsize(tamanyo)))
 
 if __name__ == "__main__":
-    ruta = input("Intruduce la ruta: \n")
+    ruta = input("Introduce la ruta: \n")
     ficheros(ruta)
 
 # Solución 2, leyendo la documentación oficial Python de la libreria os: https://docs.python.org/es/3/library/os.html
